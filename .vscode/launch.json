@@ -8,32 +8,18 @@
       "name": "Run",
       "type": "go",
       "request": "launch",
-      "port": 8080,
       "mode": "auto",
       "program": "${workspaceFolder}/main.go",
-      "env": {
-        "SERVICE_NAME": "go-bsb-service",
-        "STAGE_NAME": "dev",
-        "SERVER_PORT": 8080,
-        "VERSION": "v1",
-        "LOG_LEVEL": "debug"
-      },
+      "envFile": "${workspaceFolder}/.vscode/run.env",
       "args": []
     },
     {
       "name": "Debug",
       "type": "go",
       "request": "launch",
-      "port": 8080,
       "mode": "debug",
       "program": "${workspaceFolder}/main.go",
-      "env": {
-        "SERVICE_NAME": "go-bsb-service",
-        "STAGE_NAME": "dev",
-        "SERVER_PORT": 8080,
-        "VERSION": "v1",
-        "LOG_LEVEL": "debug"
-      },
+      "envFile": "${workspaceFolder}/.vscode/debug.env",
       "args": []
     }
   ]
